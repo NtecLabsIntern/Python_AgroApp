@@ -4,7 +4,8 @@ from  kivymd.uix.label import MDLabel
 
 kv = '''
 <LoginApp>
-MDFloatlayout:
+MDFloatLayout:
+
     md_bg_color: 1, 1, 1, 1
     Image: 
         source:"userlogin.png"
@@ -16,16 +17,16 @@ MDFloatlayout:
         font_name: "Poppins-SemiBold.ttf"
         font_size: "40sp"
         theme_text_color: "Costom" 
-    MDFloatlayout:
+    MDFloatLayout:
         size_hint: .85, .08
         pos_hint: {"center_x: .5","center_y: .5"}
         canvas:
-            color:
-                rgb:()
+            Color:
+                rgb:(223/255, 237/255, 240/255, 0)
         RoundedRectangle:
             size: self.size
             pos: self.pos
-            radius: [] 
+            radius: [(40, 40), (40, 40), (20, 20), (20, 20)] 
     TextInput:
         hint_text: "Username"
         size_hint: 1, None
@@ -38,16 +39,16 @@ MDFloatlayout:
         font_name: "Poppins-SemiBold.ttf"
         font_size: "18sp"
                
-    MDFloatlayout:
+    MDFloatLayout:
         size_hint: .85, .08
         pos_hint: {"center_x: .5","center_y: .28"}
         canvas:
-            color:
-                rgb:()
-        RoundedRectabgle:
+            Color:
+                rgb:(223/255, 237/255, 240/255, 0)
+        RoundedRectangle:
             size: self.size
             pos: self.pos
-            radius: [] 
+            radius: [(40, 40), (40, 40), (20, 20), (20, 20)] 
     TextInput:
         hint_text: "Password"
         password: True
@@ -85,11 +86,11 @@ MDFloatlayout:
         background_color: 0, 0, 0, 0
         canvas.before:
             color:
-                rgd:
+                rgd:(223/255, 237/255, 240/255, 0)
             RoundedRectangle: 
                 size: self.size
                 pos: self.pos
-                radius: [23]    
+                radius: [(40, 40), (40, 40), (20, 20), (20, 20)]    
                 
           
                     
